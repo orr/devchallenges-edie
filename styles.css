@@ -6,6 +6,10 @@
 
 :root{
     --gray-1: #333333;
+    --blue-1: #2D9CDB;
+    --gray-3: #828282;
+    --gray-4: #BDBDBD;
+    --gray-6: #F2F2F2;
 }
 
 body{
@@ -22,10 +26,10 @@ a{
     width: 100%;
 }
 
-.container {
-    margin: .8rem .625rem;
+.header-container {
     display: flex;
     align-items: center;
+    padding: 1rem 1.2rem;
 }
 
 .header .logo {
@@ -41,16 +45,99 @@ a{
     display: none;
 }
 
-.nav-small{
+.hero-section {
+    width: 100%;
+    
+}
+
+
+.hero-container{
+    width: 100%;
+    padding: 0 2.25rem 0 2.25rem;
+}
+
+.hero-container p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: .75rem;
+    line-height: 1.125rem;
+    width: 85%;
+}
+
+.hero-container label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: var(--gray-3);
+}
+
+.input-fancy {
+    display: flex;
+    background: var(--gray-6);
+    border-radius: .75rem;
+    justify-content: space-between;
+}
+
+.input-fancy input{
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.3rem;
+    color: var(--gray-4);
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-fancy button{
+    color: var(--gray-6);
+    font-style: normal;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.3rem;
+    background: var(--blue-1);
+    border-radius: 12px;
+    padding: .6rem 1.3rem;
+    border: 3px solid var(--gray-6);
 
 }
+
+.hero-section h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1.125rem;
+    color: var(--blue-1);
+}
+.hero-section h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    width: 75%;
+}
+
+.img-wrapper {
+    width: 100%;
+    padding: 0 1.2rem 0 1.2rem;
+}
+
+.hero-section img{
+    width: 100%;
+    border-radius: 18px;
+}
+
 @media (min-width: 700px) {
     .header {
         
     }
     
-    .container {
-        margin: 2.6rem 3.25rem;
+    .header-container {
+        width: 100%;
+        padding: 2.6rem 3.25rem;
     }
     .header .logo {
         font-size: 2.25rem;
@@ -76,4 +163,38 @@ a{
     .nav-small{
         display: none;
     }
+    .hero-section{
+      /*  padding: 0 17rem 0 17rem;*/
+    }
+    .hero-section h2{
+        font-size: 1.125rem;
+        line-height: 1.6rem;
+    }
+    
+    .hero-container{
+        padding: 0 17rem 0 17rem;
+    }
+    
+
+    .hero-section img{
+        width: 100%;
+        border-radius: 18px;
+        padding: 0 ;
+
+    }
+
+    .img-wrapper {
+        padding: 0 3.25rem 0 3.25rem;
+    }
+    
+  
+
+    .hero-section h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        width: 60%;
+    }
+    
 }
