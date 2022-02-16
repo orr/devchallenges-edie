@@ -29,7 +29,7 @@ a{
 .header-container {
     display: flex;
     align-items: center;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1rem;
 }
 
 .header .logo {
@@ -53,7 +53,7 @@ a{
 
 .hero-container{
     width: 100%;
-    padding: 0 2.25rem 0 2.25rem;
+    padding: 0 2.5rem 0 2.5rem;
 }
 
 .hero-container p {
@@ -62,6 +62,8 @@ a{
     font-size: .75rem;
     line-height: 1.125rem;
     width: 85%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hero-container label{
@@ -77,10 +79,10 @@ a{
     background: var(--gray-6);
     border-radius: .75rem;
     justify-content: space-between;
+    width: 85%;
 }
 
 .input-fancy input{
-    
     font-style: normal;
     font-weight: 500;
     font-size: .875rem;
@@ -118,11 +120,13 @@ a{
     font-size: 1.5rem;
     line-height: 2.25rem;
     width: 75%;
+    margin-bottom: 1rem;
 }
 
 .img-wrapper {
     width: 100%;
-    padding: 0 1.2rem 0 1.2rem;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .hero-section img{
