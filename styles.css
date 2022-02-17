@@ -297,6 +297,7 @@ a{
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    margin-bottom: 3rem;
 }
 
 .team-text h3{
@@ -346,6 +347,67 @@ a{
     border-radius: 16px;
 }
 
+.testimonial-section{
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+.testimonial-section blockquote{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.testimonial-section blockquote p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--gray-1);
+}
+
+.testimonial-section blockquote p::before{
+    content: '"';
+}
+.testimonial-section blockquote p::after{
+    content: '"';
+}
+
+.author {
+    display: flex;
+    gap: 1rem;
+}
+
+.quote-img{
+    flex: 1;
+}
+.quote-img img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.quote-author{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+}
+
+.quote-author h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;  
+    color: var(--gray-1);
+}
+
+.quote-author h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+    color: var(--gray-3);
+}
 @media (min-width: 700px) {
     .header {
         
