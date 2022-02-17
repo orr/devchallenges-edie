@@ -408,6 +408,64 @@ a{
     line-height: 1.6rem;
     color: var(--gray-3);
 }
+
+.footer{
+    
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-container{
+    background-color: #100E1D;
+}
+
+.footer-nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 4rem;
+}
+.footer-nav-item a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+}
+.socials h1{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+}
+
+.footer label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: .625rem;
+    line-height: .9rem;
+    color: var(--gray-3);
+}
+.social-medias{
+    font-size: 1.5rem;
+}
+
+.footer-dev{
+   font-weight: normal;
+    font-style: normal;
+    font-size: 0.87rem;
+    color: var(--gray-4);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-dev strong{
+    text-decoration: underline;
+}
 @media (min-width: 700px) {
     .header {
         
@@ -641,4 +699,15 @@ a{
         padding: 1rem 0 1rem 0;
     }
     
+    .footer{
+        padding: 2.5rem 11.5rem 2.5rem 11.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .socials h1{
+        line-height: initial;
+    }
 }
