@@ -47,7 +47,7 @@ a{
 
 .hero-section {
     width: 100%;
-    
+    margin-bottom: 6.3rem;
 }
 
 
@@ -134,6 +134,90 @@ a{
     border-radius: 18px;
 }
 
+.services-section{
+    padding: 0 3.125rem 0 3.125rem;
+}
+
+.services-section h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--gray-1);
+    margin-bottom: 2.87rem;
+}
+
+.services-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7.5rem;
+    margin-left: -2.125rem;
+    margin-right: -2.125rem;
+}
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.18rem;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 1.5rem;
+    padding: 3.125rem 2.125rem; 
+}
+
+.service-item .material-icons{
+    width: 67px;
+    height: 67px;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-item h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--gray-1);
+}
+
+.service-item p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray-2);
+}
+.btn{
+    border-radius: .75rem;
+    display: inline;
+    padding: .5rem .8rem;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.btn.ghost{
+    background: #E0E0E0;
+    color: #828282;
+}
+.btn.primary{
+    background: var(--blue-1);
+    color: white;
+}
+.blue {
+    background-color: var(--blue-1);
+}
+.green{
+    background-color: #27AE60;
+}
+.red{
+    background-color: #EB5757;
+}
+
 @media (min-width: 700px) {
     .header {
         
@@ -169,6 +253,7 @@ a{
     }
     .hero-section{
       /*  padding: 0 17rem 0 17rem;*/
+      margin-bottom: 6.3rem;
     }
     .hero-section h2{
         font-size: 1.125rem;
@@ -178,8 +263,6 @@ a{
     .hero-container{
         padding: 0 17rem 0 17rem;
     }
-    
-
     .hero-section img{
         width: 100%;
         border-radius: 18px;
@@ -190,15 +273,75 @@ a{
     .img-wrapper {
         padding: 0 3.25rem 0 3.25rem;
     }
-    
-  
-
     .hero-section h1 {
         font-style: normal;
         font-weight: 500;
         font-size: 3rem;
         line-height: 4.5rem;
         width: 60%;
+    }
+    .services-section{
+        padding: 0 10.3rem 0 10.3rem;
+    }
+    
+    .services-section h1{
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+        margin-bottom: 2.6rem;
+    }
+    
+    .services-items{
+        flex-direction: row;
+        gap: 1.6rem;
+        margin-left: -2.125rem;
+        margin-right: -2.125rem;
+    }
+    .service-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.18rem;
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+        border-radius: 1.5rem;
+        padding: 3.125rem 2.125rem; 
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .service-item .material-icons{
+        width: 67px;
+        height: 67px;
+        border-radius: 1rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-item h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        color: var(--gray-1);
+    }
+    
+    .service-item p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: var(--gray-2);
+    }
+    .btn{
+        border-radius: .75rem;
+        display: inline;
+        padding: .5rem .8rem;
+        border: none;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
     
 }
