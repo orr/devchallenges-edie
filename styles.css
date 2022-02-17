@@ -6,10 +6,12 @@
 
 :root{
     --gray-1: #333333;
+    --gray-2: #4F4F4F;
     --blue-1: #2D9CDB;
     --gray-3: #828282;
     --gray-4: #BDBDBD;
     --gray-6: #F2F2F2;
+    --red-1: #EB5757;
 }
 
 body{
@@ -221,6 +223,7 @@ a{
 
 .portfolio-section{
     padding: 0 1rem 0 1rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio-section h1{
@@ -263,7 +266,6 @@ a{
     line-height: 1.68rem;
     color: var(--gray-1);
     margin: 0 ;
-
 }
 
 .portfolio-item-top img{
@@ -288,6 +290,60 @@ a{
     justify-content: flex-start;
     gap: .3rem;
     color: var(--blue-1);
+}
+
+.team-section{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.team-text h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.68rem;
+    color: var(--red-1);
+}
+
+.team-text h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.3rem;
+    color: var(--gray-1);
+    width: 80%;
+    margin-bottom: .875rem;
+}
+
+.team-text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray-2);
+    margin-bottom: 2rem;
+}
+
+.team-photos{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: .4rem;
+    align-items: center;
+}
+.team-photos-left {
+    flex: 1;
+    margin-right: auto;
+}
+.team-photos-right {
+    flex: 1;
+}
+.team-photos img{
+    
+    width: 100%;
+    border-radius: 16px;
 }
 
 @media (min-width: 700px) {
